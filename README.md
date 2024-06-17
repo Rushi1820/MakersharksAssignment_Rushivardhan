@@ -10,6 +10,8 @@ Implement a user registration and user details fetch endpoints for a RESTful API
 
 **Solution:**
 I created a spring boot project “Assignment” using “Spring Initializer” where I added all the required dependencies for my project and downloaded as a jar folder. Then In Assignment project I added all the packages and classes required for it. Then added the Postgres properties in application properties file, and all other requirements
+
+
 **Requirements:**
 •	Java 17
 •	Spring Boot
@@ -31,40 +33,6 @@ The fetch endpoint will return the username, email and phone number and these ar
    Command: mvn clean install
 3.Run the project 
 
-**API Endpoints**
-**1. Register User**
-Endpoint: /api/user/register
-Method: POST
-URL: http://localhost:8080/api/user/register
-Description: Registers a new user with the provided details.
-Request Body:
-{
-    "username": "rushi18",
-    "email": "rushie@example.com",
-    "password": "seurepassword",
-    "phno": "9603366515"
-}
-**Response:**
-If the details are new and not existing, then it will accept the details and return
-{
-    "message": "User registered successfully."
-}
-Else:
-{
-    "message": "Username, email, or phone number already exists."
-}
 
-**2. Fetch User**
-Endpoint: /api/user/fetch
-Method: GET
-Description: Fetches details of a user by their username.
-URL: http://localhost:8080/api/user/fetch?username=rushi18
-Query Parameter: username
-Response:
-{
-    "phno": 9603366515,
-    "email": "rushie@example.com",
-    "username": "rushi18"
-}
 
-**Please find the attached postman collection for easy access of endpoints and documentation file**
+****Please find the attached postman collection for easy access of endpoints and Endpoint documentation file****
