@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "2779a18a-0cef-4c0f-9af9-c9526894724a",
+		"name": "MasterSharks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25460099"
+	},
+	"item": [
+		{
+			"name": "Register new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"rushi18\",\r\n    \"email\": \"rushie@example.com\",\r\n    \"password\": \"seurepassword\",\r\n    \"phno\": \"9603366515\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/user/register"
+			},
+			"response": []
+		},
+		{
+			"name": "get user details",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
